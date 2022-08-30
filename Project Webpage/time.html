@@ -1,0 +1,412 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@GitHubwalaLadka 
+Pranjal-Sancheti
+/
+NLI-Website
+Private
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+Insights
+NLI-Website/index.html
+@Pranjal-Sancheti
+Pranjal-Sancheti added projects and basic animations
+Latest commit d84f6f4 2 days ago
+ History
+ 1 contributor
+389 lines (325 sloc)  20.2 KB
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SegoeUI">
+    <link href="http://fonts.cdnfonts.com/css/segoe-ui-variable" rel="stylesheet">
+
+    <!-- AOS Library CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>NLI Website</title>
+</head>
+<body>
+
+    <!-- Home Section -->
+    <section id="Home">
+
+        <div class="container-fluid">
+
+            <!-- Nav Bar -->
+        
+            <nav class="navbar navbar-expand-lg fixed-top navbar-gm" >
+              <a class="navbar-brand" href="#" >
+                  <img src="img/nli-logo-new.png" width="55" height="50" class="d-inline-block align-top" alt="NLI logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link nav-color" href="#Home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#About">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Activities">Activities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Achievements">Achievements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+    
+            <!-- Title -->
+    
+            <div class="home-page-info col-sm-6" data-aos="fade-left" data-aos-offset="30"
+            data-aos-easing="ease-in-sine" data-aos-delay="30">
+                <p class="welcome-text text-muted">
+                    Weclome to our website
+                </p>
+                <h1 class="home-heading">
+                    New Leap Initiative
+                </h1>
+              <p class="home-content">
+              New Leap Initiative is the R&D team of K J Somaiya Institute of Engineering and Information Technology. The team aims to promote space tech and Product Development skills among students. The team also has a registered Amateur Radio Club (viz. C. R.O.W.N) "Club for Radio Operations and Wireless Networks". The club aims to promote Amateur radio activities with the help of Amateur radio community among the students of various institutions.</p>
+            </div>
+            <div class="col-sm-6">
+              <img src="" alt="">
+            </div>
+    
+          </div>
+    
+
+    </section>
+
+    <!-- About Section -->
+    <section id="About">
+
+        <h1 class="about-us-heading">About Us</h1>
+        <div class="row about-us-row">
+          <div class="about-us-box col-lg-4">
+            <div class="border-box">
+              <i class="fa-solid fa-bullhorn fa-3x icon about-us-icon"></i>
+              <h3 class="about-us-h3"> Aspire and Motivate</h3>
+              <p class="about-us-content">It always motivates to promote core domains like space tech, RF, product development among the students.</p>
+            </div>
+          </div>
+          <div class="about-us-box col-lg-4">
+            <div class="border-box">
+              <i class="fa-solid fa-bullseye fa-3x icon"></i>
+              <h3 class="about-us-h3">Aims all Round Development</h3>
+              <p class="about-us-content">Team members develop skills like communication, teamwork and many more along with tons of Technical skills.</p>
+            </div>
+          </div>
+          <div class="about-us-box col-lg-4">
+            <div class="border-box">
+              <i class="fa-solid fa-circle-check fa-3x icon"></i>
+              <h3 class="about-us-h3">Explore & Implement</h3>
+              <p class="about-us-content">Major domains of work are Space technology, Embedded Systems, Software, RF, 3D modelling, etc.</p>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!-- Activities Section -->
+    <!-- <section id="Activities">
+        <h1 class="activities-heading">Activities</h1>
+    
+        <div class="container">
+    
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <img src="img/Activities/field-day-1.jpg" class="d-block w-100 activity-img col-sm-6" alt="Field Day">
+                    <img src="img/Activities/field-day-2.png" class="d-block w-100 activity-img col-sm-6" alt="Field Day">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>ARSI National Field Day</h5>
+                  <p>Participated in the ARSI National Field day 2020 and 2021, HF/VHF Hill-Topping Contest.</p>
+                </div>
+              </div>
+              <div class="carousel-item ">
+                <div class="row">
+                    <img src="img/Activities/crown-1.jpg" class="d-block w-100 activity-img col-sm-6" alt="Inauguration Ceremony Crown">
+                    <img src="img/Activities/crown-2.jpg" class="d-block w-100 activity-img col-sm-6" alt="Inauguration Ceremony Crown">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Inauguration Ceremony Crown</h5>
+                  <p>Successfully conducted the inauguration ceremony of our Amatuer Radio Club - CROWN</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <img src="img/Activities/ASO Certificate Exam.jpeg" class="d-block w-100 activity-img" alt="ASOperator Certificate Exam">
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Amateur Station Operator Certificate Exam</h5>
+                  <p>Successfully conducted the “Amateur Station Operator Certificate” Examination in 2020.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
+          </div>
+    
+        </div>
+    </section> -->
+
+
+    <!-- Achievements Section -->
+    <section id="Achievements">
+
+        <h1 class="achievements-heading">Achievements</h1>
+    
+        <div class="container">
+          <div class="row achievements-info achiv-row achiv-img-align" data-aos="fade-left" data-aos-offset="100"
+          data-aos-easing="ease-in-sine" data-aos-delay="50">
+            <div class="col-sm-5 achievements-content my-auto">
+              <h3 class="achievements-h3">Winners of “Touch The Jovian Moon Contest” organized by LPSC-ISRO</h3>
+              <p class="achievements-p">DEC 2017 TO MAY 2018</p>
+            </div>
+    
+            <div class="col-sm-7 achiv-img-container">
+              <img class="achievements-img clearfix achiv-imgsh achiv-img" src="img/Achievements/touch the jovian moon.png" alt="" style="background-size: fit;">
+              <img class="achievements-img achiv-background-img-left" src="img/Achievements/topography1/topography-overlay-2.png">
+            </div>
+          </div>
+    
+    
+          <div class="row achievements-info  achiv-img-align" data-aos="fade-right" data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+            <div class="col-sm-7 achiv-box achiv-img-container">
+              <img class="achievements-img clearfix achiv-imgsh achiv-img" src="img/Achievements/achievements-dummy.jpg" alt="" style="background-size: fit;">
+              <img class="achievements-img achiv-background-img-right" src="img/Achievements/topography1/topography-overlay-2.png">
+            </div>
+            <div class="col-sm-5 achievements-content my-auto">
+              <h3 class="achievements-h3">Winners of “Antenna Making Contest” organized by LARC at Hyderabad</h3>
+              <p class="achievements-p">IN JAN 2020</p>
+            </div>
+          </div>
+    
+          <div class="row achievements-info achiv-row achiv-img-align" data-aos="fade-left" data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+            <div class="col-sm-5 achievements-content my-auto">
+              <h3 class="achievements-h3">Approval of BeliefSat-1 for launch under the PS4- OP Programme by ISRO-HQ, Bangalore</h3>
+              <p class="achievements-p">IN DEC 2020</p>
+            </div>
+            <div class="col-sm-7 box achiv-img-container">
+              <img class="achievements-img clearfix achiv-imgsh achiv-img" src="img/Achievements/achievements-dummy.jpg" alt="" style="background-size: fit;">
+              <img class="achievements-img achiv-background-img-left" src="img/Achievements/topography1/topography-overlay-2.png">
+            </div>
+          </div>
+    
+          <div class="row achievements-info achiv-img-align" data-aos="fade-right" data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+            <div class="col-sm-7 box achiv-img-container">
+              <img class="achievements-img clearfix achiv-imgsh achiv-img" src="img/Achievements/achievements-dummy.jpg" alt="" style="background-size: fit;">
+              <img class="achievements-img achiv-background-img-right" src="img/Achievements/topography1/topography-overlay-2.png">
+            </div>
+            <div class="col-sm-5 achievements-content my-auto">
+              <h3 class="achievements-h3">Participated in UTRR (User Trial Readiness Review) for the development of Radiosonde.</h3>
+              <p class="achievements-p">IN 2019</p>
+            </div>
+          </div>
+    
+          <div class="row achievements-info achiv-row achiv-img-align" data-aos="fade-left" data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+            <div class="col-sm-5 achievements-content my-auto">
+              <h3 class="achievements-h3">Organized the “Somaiya Space Conclave”, with an aim to promote industry-academia collaboration in the Space-Tech domain.</h3>
+                <p class="achievements-p">ON 28th FEB, 2020</p>
+            </div>
+            <div class="col-sm-7 box achiv-img-container">
+              <img class="achievements-img clearfix achiv-imgsh achiv-img" src="img/Achievements/space conclave.jpeg" alt="" style="background-size: fit;">
+              <img class="achievements-img achiv-background-img-left" src="img/Achievements/topography1/topography-overlay-2.png">
+            </div>
+          </div>
+    
+          <div class="row achievements-info achiv-img-align" data-aos="fade-right" data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+            <div class="col-sm-7 box achiv-img-container">
+              <img class="achievements-img clearfix achiv-imgsh achiv-img" src="img/Achievements/achievements-dummy.jpg" alt=""  style="background-size: fit;">
+              <img class="achievements-img achiv-background-img-right" src="img/Achievements/topography1/topography-overlay-2.png">
+            </div>
+            <div class="col-sm-5 achievements-content my-auto">
+              <h3 class="achievements-h3">Participated in “Product evaluation and tender” held at Mausam Vibhag IN Delhi announced by the Indian Meteorological Department</h3>
+              <p class="achievements-p">IN December 2020</p>
+            </div>
+          </div>
+
+          <div class="row achievements-info achiv-row achiv-img-align" data-aos="fade-left" data-aos-offset="100"
+          data-aos-easing="ease-in-sine">
+            <div class="col-sm-5 achievements-content my-auto" >
+              <h3 class="achievements-h3">Secured 3rd Prize at “ANVESHAN: National Student Research Convention” held at AMET, Chennai organized by AIU.</h3>
+              <p class="achievements-p">ON 27th MARCH 2022</p>
+            </div>
+            <div class="col-sm-7 achiv-img-container">
+              <img class="achievements-img achiv-imgsh achiv-img" src="img/Achievements/anveshan1.png" alt="" style="background-size: fit;">
+              <img class="achievements-img achiv-background-img-left" src="img/Achievements/topography1/topography-overlay-2.png">
+            </div>
+          </div>
+    
+        </div>
+
+    </section>
+
+    
+    <!-- Projects Section-->
+    <section id="Projects">
+
+        <div class="row">
+            <div class="col-sm-7 proj-left-grid">
+                <div class="row proj-img-rotate">
+                    <div class="column proj-col-1" >
+                        <img class="project-img proj-img1" src="img/Activities/activitiy-dummy.png" alt="" >
+                        <img class="project-img proj-img1" src="img/Activities/activitiy-dummy2.jpeg" alt="">
+                    </div>
+
+                    <div class="column proj-col-2">
+                        <img class="project-img proj-img2" src="img/Activities/activitiy-dummy1.png" alt="" >
+                    </div>
+
+                    <div class="column proj-col-3">
+                        <img class="project-img proj-img3" src="img/Activities/activitiy-dummy.png" alt="" >
+                        <img class="project-img proj-img3" src="img/Activities/activitiy-dummy2.jpeg" alt="">
+                    </div>
+                </div>
+            </div>  
+            <div class="col-sm-5 proj-content">
+                <h1 class="projects-heading">Projects</h1>
+                <p class="project-info">Lorem ipsum dolor sit amet. In rerum voluptas et cumque voluptatibus qui quidem dicta ab numquam aperiam. Ut delectus nulla aut dolorem nam mollitia accusantium qui obcaecati molestiae cum quis porro.</div> 
+
+                <!-- <div id="project1" class="project1-info invisible">
+                    <h3 class="project1-h3 ">BeleifSat-1</h1>
+                    <p class="project1-p">The BeleifSat is a 2p standard PocketQube Nano Satellite being developed by the students of K J Somaiya Institute of Engineering and Information Technology, Sion, Mumbai. It is an Amateur Radio satellite accepted for launch under ISRO's PS4 Orbital Platform Programme along with the deployment mechanism named SomaiyaPod. The team aims to demonstrate the deployment of BeleifSat from the SomaiyaPOD and perform functions like Antenna Deployment, Digipeating and Voice-repeating.</p>
+                </div> -->
+            </div>
+        </div> 
+    </section>
+            <!-- <div class="col-sm-6">
+                <div id="project1" class="project1-info invisible">
+                    <h3 class="project1-h3 ">BeleifSat-1</h1>
+                    <p class="project1-p">The BeleifSat is a 2p standard PocketQube Nano Satellite being developed by the students of K J Somaiya Institute of Engineering and Information Technology, Sion, Mumbai. It is an Amateur Radio satellite accepted for launch under ISRO's PS4 Orbital Platform Programme along with the deployment mechanism named SomaiyaPod. The team aims to demonstrate the deployment of BeleifSat from the SomaiyaPOD and perform functions like Antenna Deployment, Digipeating and Voice-repeating.</p>
+                </div>
+            </div>
+        </div> -->
+
+    <!-- Team Section -->
+    <section id="Team">
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="Contact">
+
+        <h1 class="contact-heading">Contact Us</h1>
+
+        <div class="row">
+            <div class="container mt-5" >
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="mb-5 contact-subheading">Lorem ipsum dolor sit amet. Est dolorum porro est assumenda neque.</h3>
+                    </div>
+                </div>
+            
+                <div class="row contact-content">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-lg-6">
+
+                                <p class="mt-2">For general inquiries, send an e-mail to @nli.somaiya.edu</p>
+                                <p class="mt-2">For general inquiries, send an e-mail to @nli.somaiya.edu</p>
+                    
+                                <!-- <i class="fa fa-envelope mt-3"></i> <a href="">info@test.it</a><br>
+                                <i class="fas fa-globe mt-3"></i> Piazza del Colosseo, 1, 00184 Roma<br> -->
+                                <div class="my-4">
+                                    <a href=""><i class="fab fa-facebook fa-3x pr-4"></i></a>
+                                    <a href=""><i class="fab fa-github fa-3x pr-4"></i></a>
+                                    <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 maps mt-2" >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11880.492291371422!2d12.4922309!3d41.8902102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x28f1c82e908503c4!2sColosseo!5e0!3m2!1sit!2sit!4v1524815927977" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+            
+                </div>
+            </div>
+            </div>
+
+    </section>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fff13d0d2a.js" crossorigin="anonymous"></script>
+
+    <!-- AOS library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>

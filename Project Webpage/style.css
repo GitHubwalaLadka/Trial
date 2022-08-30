@@ -1,0 +1,106 @@
+/* Projects */
+
+#Projects {
+    padding: 5% 7% 7% 7%;
+    color: #212325;
+   
+}
+
+.projects-heading {
+    font-family: 'Segoe UI Variable', sans-serif;
+    font-style: 'bold';
+    font-size: 2rem;
+    padding: 1px 0px;
+    margin: 0px;
+    color:  #212325 ;
+    text-align: left;
+}
+
+.project-info {
+    font-family: 'Arial', sans-serif;
+    font-style: 'Regular';
+    font-size: 1rem;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+    padding: 20px 0px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.proj-img-rotate {
+    -ms-transform: rotate(-18deg); 
+    transform: rotate(-18deg);
+}
+
+.proj-col-1 {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%
+}
+
+.proj-col-2 {
+    -ms-flex: 40%;
+    flex: 40%;
+    max-width: 40%
+}
+
+.proj-col-3 {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%
+}
+
+.proj-left-grid {
+    padding-left: 5%;
+}
+
+/* .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 30%;
+} */
+
+.column img {
+    padding-top: 5px;
+    /* vertical-align: middle; */
+    width: 100%;
+}
+
+.project-img {
+    padding: 5px;
+}
+
+/* .proj-col-1 {
+    padding-bottom: 5rem;
+}
+.proj-col-2 {
+    padding-top: 5rem;
+} */
+
+.project1-h3 {
+    color: #FFFFFF;
+    font-family: "Arial, Regular";
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.proj-content {
+    padding-left: 50px;
+}
+
+/* Contact Us */
+
+/* #contatti{
+  letter-spacing: 2px;
+  } */
+/* #contatti a{
+  color: #fff;
+  text-decoration: none;
+} */
