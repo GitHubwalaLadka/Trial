@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script rel="stylesheet" href="bootstrap-4.3.1-dist\css\bootstrap.min.css"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=SegoeUI">
@@ -60,7 +61,7 @@
       color: #fff;
       color: #212325;
 
-      padding: 130px 25px;
+      padding: 280px 25px;
       font-family: 'Segoe UI Variable', sans-serif;
       font-style: 'bold';
       text-align: left;
@@ -69,7 +70,7 @@
     }
 
     .jumbotron h1 {
-      padding-top: 150px;
+      padding-top: 240px;
       font-size: 100px;
 
     }
@@ -83,6 +84,10 @@
       padding-left: 95px;
     }
 
+    .jumbotron-intro-para{
+      font-size: 2rem;
+      padding-top: 0px;
+    }
 
     .container-fluid {
       padding: 60px 50px;
@@ -243,6 +248,15 @@
       color: #fff;
     }
 
+    .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+    }
+    .grid-item {
+  font-size: 20px;
+  text-align: center;
+  padding: 0px;
+    }
     /* .navbar {
     margin-bottom: 0;
     background-color: #f2c029;;
@@ -286,6 +300,13 @@
       margin-right: 200px;
     }
 
+    .row-text-right p{
+      font-size: 17px;
+      line-height: normal;
+      padding-top: 200px;
+    
+    }
+
     /* .navbar-nav li a:hover, .navbar-nav li.active a {
     color: #212325 !important;
     background-color: #f2c029 !important;
@@ -317,6 +338,38 @@
       visibility: visible;
     }
 
+    .bottom-arrow {
+      border-bottom: 0px solid #212325;
+      justify-content: center;
+}
+
+.bottom-arrow:after {
+    content:'';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    margin-top: -150px;
+    border-top: 40px solid #212325;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+.arrow {
+  background-color: #f2c029;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+
+  padding: 3px;
+}
+.down {
+  background-color: #f2c029;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
     @keyframes slide {
       0% {
         opacity: 0;
@@ -380,18 +433,31 @@
     </div>
   </div>
 </nav> -->
+  <div class="jumbotron-intro-para row-text-right" style="padding-left:100px; width:500px;">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda omnis eos vitae sint cupiditate dolores impedit odit, optio, amet eligendi temporibus consequuntur alias praesentium fugiat qui laboriosam ipsam deleniti soluta ullam ea cum expedita. Veritatis eveniet, omnis sit, dolore ut vitae iusto expedita magnam error, eum officiis aliquid minus molestiae quaerat nisi? Autem, quos rerum?
+    </p>
+    <h4 style="margin-top:80%; font-size:30px;"><strong>Tags: </strong></h4>
+    <div style="position: relative; top: -75px; right: -70px;" class="grid-container">
+      
+      <a href="#about1"><div class="grid-item"><strong>Title 1</strong></div></a>
+      <a href="#about2"><div class="grid-item"><strong>Title 2</strong></div></a>
+      <a href="#about3"><div class="grid-item"><strong>Title 3</strong></div></a>
+      <a href="#about4"><div class="grid-item"><strong>Title 4</strong></div></a>
+      <a href="#about5"><div class="grid-item"><strong>Title 5</strong></div></a>
+    </div>
+
+  </div>
 
   <div class="jumbotron text-center">
     <h1> > Projects @NLI</h1>
     <p>Read more about the projects undertaken by us.</p>
-    <p style="font-size: 20px;">Scroll Down</p>
-    <!-- <h2 class="scroll" style="text-align: center; justify-content: center;">↓</h2> -->
-    <form>
-    </form>
+    
+  </div>
+  <div class="bottom-arrow bg-grey">
   </div>
 
   <!-- Container (About Section) -->
-  <div id="about" class="container-fluid bg-light">
+  <div id="about1" class="container-fluid bg-grey">
     <h2 class="imghead" style="justify-content: left;">BeliefSat-1</h2><br>
     <div class="row">
       <!-- <h2 style="justify-content: left;">BeliefSat-1</h2><br> -->
@@ -413,7 +479,7 @@
   </div>
   </div>
 
-  <div class="container-fluid bg-light">
+  <div id="about2" class="container-fluid bg-grey">
     <h2 style="justify-content: left;">Automated Ground Station</h2><br>
     <div class="row">
       <img src="GS1.jpeg" class="pic1 slideanim" width="300px">
@@ -433,7 +499,7 @@
   </div>
 
   <!-- Container (About Section) -->
-  <div id="about" class="container-fluid bg-grey">
+  <div id="about3" class="container-fluid bg-light">
     <h2 style="justify-content: left;">Upper Air Sounding System</h2><br>
     <div class="row">
       <img class="pic1 slideanim" src="anveshan.png" width="300px">
@@ -451,7 +517,7 @@
     </div>
   </div>
 
-  <div id="about" class="container-fluid bg-grey">
+  <div id="about4" class="container-fluid bg-light">
     <h2 style="justify-content: left;">Upper Air Sounding System</h2><br>
     <div class="row">
       <img class="pic4 slideanim" src="feild day1.png" width="300px">
