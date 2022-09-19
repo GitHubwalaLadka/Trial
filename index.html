@@ -61,7 +61,7 @@
       color: #fff;
       color: #212325;
 
-      padding: 280px 25px;
+      padding: 180px 25px;
       font-family: 'Segoe UI Variable', sans-serif;
       font-style: 'bold';
       text-align: left;
@@ -70,7 +70,7 @@
     }
 
     .jumbotron h1 {
-      padding-top: 240px;
+      padding-top: 150px;
       font-size: 100px;
 
     }
@@ -256,7 +256,28 @@
   font-size: 20px;
   text-align: center;
   padding: 0px;
-    }
+}
+
+a:link {
+  color: #212325;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:active {
+  color: #212325;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:visited {
+  color: #212325;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #212325;
+  background-color: transparent;
+  text-decoration: none;
+}
     /* .navbar {
     margin-bottom: 0;
     background-color: #f2c029;;
@@ -303,7 +324,7 @@
     .row-text-right p{
       font-size: 17px;
       line-height: normal;
-      padding-top: 200px;
+      padding-top: 50px;
     
     }
 
@@ -357,18 +378,15 @@
     border-right: 50px solid transparent;
 }
 
-.arrow {
+.header-down-arrow {
   background-color: #f2c029;
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-
-  padding: 3px;
-}
-.down {
-  background-color: #f2c029;
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  color: #f2c029;
+  position: absolute;
+    bottom: 4vh;
+    left: 0;
+    right: 0;
+  text-align: center;
+  z-index: 10;
 }
     @keyframes slide {
       0% {
@@ -436,8 +454,8 @@
   <div class="jumbotron-intro-para row-text-right" style="padding-left:100px; width:500px;">
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda omnis eos vitae sint cupiditate dolores impedit odit, optio, amet eligendi temporibus consequuntur alias praesentium fugiat qui laboriosam ipsam deleniti soluta ullam ea cum expedita. Veritatis eveniet, omnis sit, dolore ut vitae iusto expedita magnam error, eum officiis aliquid minus molestiae quaerat nisi? Autem, quos rerum?
     </p>
-    <h4 style="margin-top:80%; font-size:30px;"><strong>Tags: </strong></h4>
-    <div style="position: relative; top: -75px; right: -70px;" class="grid-container">
+    <h4 style="margin-top:60%; font-size:30px;"><strong>Tags: </strong></h4>
+    <div style="position: relative; top: -85px; right: -70px;" class="grid-container">
       
       <a href="#about1"><div class="grid-item"><strong>Title 1</strong></div></a>
       <a href="#about2"><div class="grid-item"><strong>Title 2</strong></div></a>
@@ -453,8 +471,11 @@
     <p>Read more about the projects undertaken by us.</p>
     
   </div>
-  <div class="bottom-arrow bg-grey">
-  </div>
+  <section class="header-down-arrow">
+   <a href="#about1"> <img src="darrow.png" width="80"></a>
+  </section>  
+  <!-- <div class="bottom-arrow bg-grey">
+  </div> -->
 
   <!-- Container (About Section) -->
   <div id="about1" class="container-fluid bg-grey">
